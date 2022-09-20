@@ -1,0 +1,90 @@
+Diffrence between Document and Window?
+
+Document:-
+
+1). Document represents any HTML document or web page that is loaded in the browser.
+
+2). we are using the document for accessing the DOM
+
+3). It is loaded inside the window.
+
+4). It is the object of window property.
+
+5). All the tags, elements with attributes in HTML are part of the document.
+
+6). The document is part of BOM (browser object model) and dom (Document object model)
+
+
+syntax:
+
+      document.propertyname;
+
+HTML PAGE in my VScode:-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is super cool ❤️</h1>
+    <script src="first.js"></script>
+</body>
+</html>
+
+JAVASCRIPT PAGE in my VScode:-
+
+
+console.log(document.getElementsByTagName(`h1`)[0].textContent);
+
+OUTPUT:-
+
+This is super cool ❤️
+
+
+Window:-
+
+
+1). Window represents a browser window or frame that displays the contents of the webpage.   
+
+	
+2). It is the very first object that is loaded in the browser.
+
+
+3). It is the object of the browser.
+
+
+4). Global objects, functions, and variables of JavaScript are members of the window object.
+
+
+5). We can access the window from the window only. i.e. window.window
+
+The window is part of BOM, not DOM.
+
+
+syntax:
+
+window.propertyname;
+
+Example 1:-
+
+JAVASCRIPT PAGE in my VScode:-
+
+console.log(window.alert("cool page"));
+
+OUTPUT:-
+
+pop up message will come and cool page and click OK button.
+
+
+Example 2:-
+
+JAVASCRIPT PAGE in my VScode:-
+
+console.log(window.confirm("Are you sure you want to close?"));
+
+OUTPUT:-
+Pop up message will come. Are you sure you want to close? and click OK and CANCEL button.
